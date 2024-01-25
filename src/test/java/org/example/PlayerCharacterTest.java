@@ -21,38 +21,38 @@ class PlayerCharacterTest {
         assertEquals(expected, actual);
     }
     @Test
-    public void move_whenInputW_thenYIsOne() {
+    public void hasPlayerPressedKeyW_whenInputW_thenYIsOne() {
         //GIVEN:
         String str = "W";
         //WHEN:
-        boolean actual = PlayerCharacter.move(str);
+        boolean actual = PlayerCharacter.hasPlayerPressedKeyW(str);
         //THEN:
        assertTrue(actual);
     }
     @Test
-    public void moveS_whenInputS_thenYisMinusOne() {
+    public void hasPlayerPressedKeyS_whenInputS_thenYisMinusOne() {
         //GIVEN:
         String str = "S";
         //WHEN:
-        boolean actual = PlayerCharacter.moveS(str);
+        boolean actual = PlayerCharacter.hasPlayerPressedKeyS(str);
         //THEN:
         assertTrue(actual);
     }
     @Test
-    public void moveD_whenInputD_thenXisOne() {
+    public void hasPlayerPressedKeyD_whenInputD_thenXisOne() {
         //GIVEN:
         String str = "D";
         //WHEN:
-        boolean actual = PlayerCharacter.moveD(str);
+        boolean actual = PlayerCharacter.hasPlayerPressedKeyD(str);
         //THEN:
         assertTrue(actual);
     }
     @Test
-    public void moveA_whenInputA_thenXisMinusOne() {
+    public void hasPlayerPressedKeyA_whenInputA_thenXisMinusOne() {
         //GIVEN:
         String str = "A";
         //WHEN:
-        boolean actual = PlayerCharacter.moveA(str);
+        boolean actual = PlayerCharacter.hasPlayerPressedKeyA(str);
         //THEN:
         assertTrue(actual);
     }

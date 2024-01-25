@@ -7,28 +7,28 @@ public class PlayerCharacter {
     public static int getY(){
         return 0;
     }
-    public static boolean move(String str){
+    public static boolean hasPlayerPressedKeyW(String str){
         int y = 0;
         if (Objects.equals(str, "W")) {
              y = 1;
         }
         return y == 1;
     }
-    public static boolean moveS(String str) {
+    public static boolean hasPlayerPressedKeyS(String str) {
         int y = 0;
         if (Objects.equals(str, "S")) {
             y = (-1);
         }
         return y == (-1);
     }
-    public static boolean moveD(String str) {
+    public static boolean hasPlayerPressedKeyD(String str) {
         int x = 0;
         if (Objects.equals(str, "D")) {
-            x = (1);
+            x = 1;
         }
         return x == (1);
     }
-    public static boolean moveA(String str) {
+    public static boolean hasPlayerPressedKeyA(String str) {
         int x = 0;
         if (Objects.equals(str, "A")) {
             x = (-1);
