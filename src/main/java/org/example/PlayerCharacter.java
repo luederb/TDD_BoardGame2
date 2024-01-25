@@ -13,7 +13,7 @@ public class PlayerCharacter {
     public static boolean move(String str){
         int y = 0;
         if (Objects.equals(str, "W")) {
-             y=1;
+             y = 1;
         }
         return y == 1;
     }

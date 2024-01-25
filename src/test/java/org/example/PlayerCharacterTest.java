@@ -27,10 +27,9 @@ class PlayerCharacterTest {
     public void move_whenInputW_thenYIsOne() {
         //GIVEN:
         String str = "W";
-        boolean expected = true;
         //WHEN:
         boolean actual = PlayerCharacter.move(str);
         //THEN:
-        assertEquals(expected, actual);
+       assertTrue(actual);
     }
 }
