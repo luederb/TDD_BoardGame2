@@ -26,10 +26,10 @@ class PlayerCharacterTest {
     @Test
     public void move_whenInputW_thenYIsOne() {
         //GIVEN:
-        int y = 1;
+        String str = "W";
         boolean expected = true;
         //WHEN:
-        boolean actual = PlayerCharacter.move(y);
+        boolean actual = PlayerCharacter.move(str);
         //THEN:
         assertEquals(expected, actual);
     }
