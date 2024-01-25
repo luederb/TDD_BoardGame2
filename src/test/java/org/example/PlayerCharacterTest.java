@@ -23,4 +23,14 @@ class PlayerCharacterTest {
         //THEN:
         assertEquals(expected, actual);
     }
+    @Test
+    public void move_whenInputW_thenYIsOne() {
+        //GIVEN:
+        int y = 1;
+        boolean expected = true;
+        //WHEN:
+        boolean actual = PlayerCharacter.move(y);
+        //THEN:
+        assertEquals(expected, actual);
+    }
 }
